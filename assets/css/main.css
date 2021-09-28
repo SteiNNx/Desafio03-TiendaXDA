@@ -14999,8 +14999,9 @@ body {
   margin-left: auto;
   padding: 0 1.75rem 0 0.25rem;
   width: 100%;
+  /** Celular */
 }
-@media (max-width: 576px) {
+@media (min-width: 0px) and (max-width: 576px) {
   .navbar__container {
     padding: 0 0.25rem 0 0.25rem;
   }
@@ -15016,17 +15017,19 @@ body {
   padding: 2.5rem;
   text-decoration: none;
   white-space: nowrap;
+  /** Celular */
+  /** Tablet */
 }
-@media (max-width: 576px) {
-  .navbar__container__brand {
-    padding: 0.2rem;
-    font-size: 20px;
-  }
-}
-@media (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 576px) {
   .navbar__container__brand {
     padding: 0.2rem;
     font-size: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .navbar__container__brand {
+    padding: 1.5rem;
+    font-size: 18px;
   }
 }
 .navbar__container__toggler {
@@ -15037,8 +15040,9 @@ body {
   display: none;
   font-size: 1.25rem;
   padding: 0.6rem 0.75rem 0.1rem 0.75rem;
+  /** Celular */
 }
-@media (max-width: 576px) {
+@media (min-width: 0px) and (max-width: 576px) {
   .navbar__container__toggler {
     display: block;
   }
@@ -15054,8 +15058,9 @@ body {
   flex-basis: auto;
   flex-grow: 1;
   width: 100%;
+  /** Celular */
 }
-@media (max-width: 576px) {
+@media (min-width: 0px) and (max-width: 576px) {
   .navbar__container__collapse {
     display: none;
   }
