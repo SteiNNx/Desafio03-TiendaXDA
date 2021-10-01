@@ -15109,6 +15109,7 @@ body {
   text-align: start;
 }
 .formulario__input {
+  display: block;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -15184,6 +15185,8 @@ body {
   /** Tablet */
 }
 .container-main main .section-tienda {
+  max-height: 80vw;
+  min-height: 50vw;
   display: flex;
   flex-flow: row wrap;
   width: 100%;
@@ -15194,6 +15197,7 @@ body {
   padding: 5rem;
   text-align: center;
   width: 100%;
+  /** Celular */
 }
 .container-main main .section-tienda__article h1 {
   font-family: "Old Standard TT", serif;
@@ -15217,23 +15221,41 @@ body {
   font-size: 20px;
   font-weight: 700;
   width: 90% !important;
-  padding: 2rem 5rem 2rem 2rem;
+  padding: 2rem 5rem 2rem 2rem !important;
   background-color: #0c0910;
   color: #ffffff;
+  height: auto;
   text-align: start;
+  /** Celular */
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .container-main main .section-tienda__article__left-black {
+    width: 80% !important;
+  }
 }
 .container-main main .section-tienda__article__right-white {
   font-family: "Old Standard TT", serif;
   font-size: 20px;
   font-weight: 700;
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 1rem !important;
   height: auto;
   width: 10% !important;
   writing-mode: vertical-lr;
+  /** Celular */
 }
 .container-main main .section-tienda__article__right-white h3 {
   margin: auto;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .container-main main .section-tienda__article__right-white {
+    width: 20% !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .container-main main .section-tienda__article {
+    padding: 2rem;
+  }
 }
 @media (min-width: 0px) and (max-width: 576px) {
   .container-main main {

@@ -7,6 +7,7 @@
         text-align: start;
     }
     &__input {
+        display: block;
         font-family: $raleway;
         font-size: $font-size-md;
         font-weight: $font-weight-regular-400;

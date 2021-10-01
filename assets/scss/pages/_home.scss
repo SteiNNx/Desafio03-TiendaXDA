@@ -32,6 +32,8 @@
         min-height: 50vw;
 
         .section-tienda {
+            max-height: 80vw;
+            min-height: 50vw;
             display: flex;
             flex-flow: row wrap;
             width: 100%;
@@ -66,23 +68,37 @@
                     font-size: $font-size-xl;
                     font-weight: $font-weight-bold-700;
                     width: 90% !important;
-                    padding: 2rem 5rem 2rem 2rem;
+                    padding: 2rem 5rem 2rem 2rem !important;
                     background-color: $smoky-black;
                     color: $white;
+                    height: auto;
                     text-align: start;
+                    /** Celular */
+                    @media (min-width: 0px) and (max-width: $width-sm) {
+                        width: 80% !important;
+                    }
                 }
                 &__right-white {
                     font-family: $old-standart-tt;
                     font-size: $font-size-xl;
                     font-weight: $font-weight-bold-700;
                     background-color: $white;
-                    padding: 1rem;
+                    padding: 1rem !important;
                     height: auto;
                     width: 10% !important;
                     writing-mode: vertical-lr;
                     h3 {
                         margin: auto;
                     }
+                    /** Celular */
+                    @media (min-width: 0px) and (max-width: $width-sm) {
+                        width: 20% !important;
+                    }
+                }
+
+                /** Celular */
+                @media (min-width: 0px) and (max-width: $width-sm) {
+                    padding: 2rem;
                 }
             }
         }
