@@ -1,1 +1,101 @@
 /** __Home */
+.container-main {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    nav {
+        width: 100%;
+        order: 1;
+    }
+
+    header {
+        width: 50%;
+        order: 3;
+
+        /** Celular */
+        @media (min-width: 0px) and (max-width: $width-sm) {
+            width: 100%;
+            order: 2;
+        }
+        /** Tablet */
+        @media (min-width: $width-sm) and (max-width: $width-lg) {
+            width: 100%;
+            order: 2;
+        }
+    }
+
+    main {
+        width: 50%;
+        order: 2;
+        min-height: 50vw;
+
+        .section-tienda {
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+
+            &__article {
+                box-sizing: border-box;
+                height: 50%;
+                padding: 5rem;
+                text-align: center;
+                width: 100%;
+                h1 {
+                    font-family: $old-standart-tt;
+                    font-size: $font-size-xxxl;
+                    font-weight: $font-weight-bold-700;
+                    text-transform: uppercase;
+                    margin: 0px;
+                    width: 100%;
+                    align-items: center;
+                }
+                p {
+                    text-align: start;
+                    line-height: 1.8rem;
+                    opacity: 0.5;
+                }
+
+                &__button {
+                    text-align: start;
+                }
+
+                &__left-black {
+                    font-family: $old-standart-tt;
+                    font-size: $font-size-xl;
+                    font-weight: $font-weight-bold-700;
+                    width: 90% !important;
+                    padding: 2rem 5rem 2rem 2rem;
+                    background-color: $smoky-black;
+                    color: $white;
+                    text-align: start;
+                }
+                &__right-white {
+                    font-family: $old-standart-tt;
+                    font-size: $font-size-xl;
+                    font-weight: $font-weight-bold-700;
+                    background-color: $white;
+                    padding: 1rem;
+                    height: auto;
+                    width: 10% !important;
+                    writing-mode: vertical-lr;
+                    h3 {
+                        margin: auto;
+                    }
+                }
+            }
+        }
+
+        /** Celular */
+        @media (min-width: 0px) and (max-width: $width-sm) {
+            width: 100%;
+            order: 3;
+        }
+        /** Tablet */
+        @media (min-width: $width-sm) and (max-width: $width-lg) {
+            width: 100%;
+            order: 3;
+        }
+    }
+}

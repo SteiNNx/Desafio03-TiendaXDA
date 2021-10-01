@@ -1,1 +1,29 @@
 /** __Buttons */
+.btn-tienda {
+    background-color: $white;
+    border-radius: 3px;
+    border-color: $smoky-black;
+    color: $smoky-black;
+    display: inline-block;
+    font-weight: $font-weight-bold-700;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0.2rem 0 0.2rem 0;
+    padding: 0.8em 2em;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+
+    &:hover {
+        border-color: $quick-silver;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.2rem $quick-silver;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 0.8rem;
+        padding: 0.7em;
+    }
+}

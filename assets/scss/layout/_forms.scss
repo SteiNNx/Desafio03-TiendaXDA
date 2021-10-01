@@ -1,1 +1,15 @@
 /** __Forms */
+.formulario {
+    display: block;
+    &__label {
+        font-size: $font-size-lg;
+        width: 100%;
+        text-align: start;
+    }
+    &__input {
+        font-family: $raleway;
+        font-size: $font-size-md;
+        font-weight: $font-weight-regular-400;
+        width: 70%;
+    }
+}
